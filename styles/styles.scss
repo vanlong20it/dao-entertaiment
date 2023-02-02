@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+  @apply text-gray-900;
+}
+
+.slide-overlay::after {
+  content: "";
+  @apply bg-black opacity-50 absolute top-0 left-0 w-full h-full;
+}
+
+.btn-primary {
+  @apply text-center font-semibold inline-block no-underline px-5 py-2 border-2 transition-all text-white duration-300 bg-primary ease-linear border-primary border-solid rounded-md uppercase hover:border-primary hover:text-primary hover:bg-transparent text-sm;
+}
+
+.btn-block {
+  @apply block;
+}
+
+.btn-default {
+  @apply font-semibold inline-block px-5 py-2 border-2 transition-all duration-300 text-gray-500 bg-white ease-linear border-gray-500 border-solid rounded-md uppercase hover:border-primary hover:text-white hover:bg-primary text-sm;
+}
+
+.artist-overlay::after {
+  content: "";
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 250, 252, 0) 100%,
+    rgba(255, 226, 0, 0) 100%
+  );
+  @apply absolute w-full h-full top-0 left-0;
+}
+
+.custom-field:placeholder-shown + .custom-label {
+  @apply text-white block;
+}
+
+.custom-field:focus + .custom-label{
+  opacity: .6;
+}
