@@ -21,7 +21,8 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     <Fragment>
       <Head>
         <title>Dao entertainment</title>
-        <meta name="description" content="Make you better" />
+        <meta name="description" content="We are developing a company that combines music distribution and technology to allow independent artists to have direct control over their music including distribution, marketing, optimization,... Welcome to dao-entertainment" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="revisit-after" content="1 days" />
         <meta
           name="keywords"
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="all,index,follow" />
         <meta name="google" content="dao entertainment" />
+        <meta httpEquiv="content-language" content="vi"/>
       </Head>
       {getLayout(<Component {...pageProps} />)}
     </Fragment>
