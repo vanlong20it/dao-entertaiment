@@ -15,8 +15,9 @@ const Home: NextPageWithLayout = () => {
   return (
     <main>
       <Head>
-        <title>Dao entertaiment</title>
+        <title>Dao entertainment</title>
         <meta name="description" content="Make you better" />
+        <meta name="keywords" content="daoentertainment,DAO,dao-entertainment" />
       </Head>
       <HeroSection />
       <PlatformSection />
